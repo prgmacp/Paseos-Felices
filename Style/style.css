@@ -1969,15 +1969,25 @@ button, input, select, textarea {
 
   /* Formulario y Contacto */
   .contact-grid {
-    padding: 1.25rem 0.75rem;
+    padding: 0.75rem 0.4rem;
+  }
+
+  /* Los hijos del grid pueden encogerse; los textos largos (correo) se parten */
+  .contact-grid > * {
+    min-width: 0;
+  }
+
+  .method-details {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   .contact-form-panel {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 0.75rem;
   }
 
   .form-fieldset {
-    padding: 1.25rem 0.85rem 0.75rem 0.85rem;
+    padding: 1.25rem 0.6rem 0.5rem 0.6rem;
   }
 
   .form-row {
