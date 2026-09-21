@@ -144,38 +144,37 @@
             <fieldset class="form-fieldset">
               <legend class="form-legend">👤 1. Datos del Tutor / Propietario</legend>
               
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="contact-nombre" class="form-label">Nombre Completo <span class="required-mark">*</span></label>
-                  <input type="text" id="contact-nombre" name="nombre_completo" class="form-input" placeholder="Ej: Patricia Morales" required minlength="3">
-                </div>
-                <div class="form-group">
-                  <label for="contact-email" class="form-label">Correo Electrónico <span class="required-mark">*</span></label>
-                  <input type="email" id="contact-email" name="correo_electronico" class="form-input" placeholder="patricia@ejemplo.com" required>
-                </div>
+              <div class="form-group">
+                <label for="contact-nombre" class="form-label">Nombre Completo <span class="required-mark">*</span></label>
+                <input type="text" id="contact-nombre" name="nombre_completo" class="form-input" placeholder="Ej: Patricia Morales" required minlength="3">
               </div>
 
               <div class="form-row">
                 <div class="form-group">
+                  <label for="contact-email" class="form-label">Correo Electrónico <span class="required-mark">*</span></label>
+                  <input type="email" id="contact-email" name="correo_electronico" class="form-input" placeholder="patricia@ejemplo.com" required>
+                </div>
+                <div class="form-group">
                   <label for="contact-telefono" class="form-label">Número de Teléfono / Celular <span class="required-mark">*</span></label>
                   <input type="tel" id="contact-telefono" name="numero_telefono" class="form-input" placeholder="Ej: +502 3006-2694" required pattern="[0-9+\(\)\- ]{8,}" title="Ingresa un número válido de al menos 8 dígitos (solo números, +, espacios, guiones o paréntesis)">
                 </div>
-                <div class="form-group">
-                  <span class="form-label">Preferencia de Contacto <span class="required-mark">*</span></span>
-                  <div class="radio-options-grid">
-                    <label class="radio-card-label" for="pref-whatsapp">
-                      <input type="radio" id="pref-whatsapp" name="preferencia_contacto" value="whatsapp" checked>
-                      <span>💬 WhatsApp</span>
-                    </label>
-                    <label class="radio-card-label" for="pref-llamada">
-                      <input type="radio" id="pref-llamada" name="preferencia_contacto" value="llamada">
-                      <span>📞 Llamada</span>
-                    </label>
-                    <label class="radio-card-label" for="pref-correo">
-                      <input type="radio" id="pref-correo" name="preferencia_contacto" value="correo">
-                      <span>✉️ Correo</span>
-                    </label>
-                  </div>
+              </div>
+
+              <div class="form-group">
+                <span class="form-label">Preferencia de Contacto <span class="required-mark">*</span></span>
+                <div class="radio-options-grid">
+                  <label class="radio-card-label" for="pref-whatsapp">
+                    <input type="radio" id="pref-whatsapp" name="preferencia_contacto" value="whatsapp" checked>
+                    <span>💬 WhatsApp</span>
+                  </label>
+                  <label class="radio-card-label" for="pref-llamada">
+                    <input type="radio" id="pref-llamada" name="preferencia_contacto" value="llamada">
+                    <span>📞 Llamada</span>
+                  </label>
+                  <label class="radio-card-label" for="pref-correo">
+                    <input type="radio" id="pref-correo" name="preferencia_contacto" value="correo">
+                    <span>✉️ Correo</span>
+                  </label>
                 </div>
               </div>
             </fieldset>
@@ -392,6 +391,20 @@
           };
           selectSolicitud.value = mapping[servicioParam] || servicioParam;
         }
+      }
+
+      // Plan elegido en la página de Precios: preselecciona la solicitud y sugiere el asunto
+      const planParam = urlParams.get('plan');
+      const planes = {
+        'ocasional': 'Paseo Ocasional',
+        'mensual': 'Membresía Mensual VIP',
+        'semanal': 'Pack Semanal'
+      };
+      if (planes[planParam]) {
+        const selectSolicitud = document.getElementById('contact-solicitud');
+        const inputAsunto = document.getElementById('contact-asunto');
+        if (selectSolicitud) selectSolicitud.value = 'reserva-paseo';
+        if (inputAsunto) inputAsunto.value = 'Quiero contratar: ' + planes[planParam];
       }
 
       // Manejador del Formulario: Validación y Experiencia de Usuario

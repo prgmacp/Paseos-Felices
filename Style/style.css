@@ -986,7 +986,7 @@ button, input, select, textarea {
 /* Opciones de Radio Modernas */
 .radio-options-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   gap: 0.75rem;
   margin-top: 0.25rem;
 }
@@ -1865,6 +1865,7 @@ button, input, select, textarea {
     width: 100%;
     min-height: 3rem; /* Tamaño táctil mínimo optimizado */
     font-size: 0.95rem;
+    white-space: normal; /* el texto de los botones puede partirse en pantallas angostas */
   }
 
   .header-cta {
