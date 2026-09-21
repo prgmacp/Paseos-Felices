@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Fotos y Videos | Paseos Felices</title>
+  <meta name="description"
+    content="Explora nuestra galería de fotos y videos. Conoce a los perritos de la comunidad disfrutando de paseos, juegos y senderismo.">
+  <link rel="icon" type="image/svg+xml" href="Style/imagenes/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+
+  <!-- ================= ENCABEZADO Y NAVEGACIÓN ================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de Paseos Felices">
+        <img src="Style/imagenes/logo.svg" alt="Logotipo Paseos Felices" width="180" height="42">
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Abrir menú de navegación">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu" role="navigation" aria-label="Menú principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="precios.html" class="nav-link">Precios</a>
+        <a href="galeria.html" class="nav-link active">Galería</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <div class="mobile-menu-cta" style="display: none;">
+          <a href="contacto.html" class="btn btn-secondary btn-sm btn-block">Reservar Paseo</a>
+        </div>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contacto.html" class="btn btn-secondary btn-sm">Reservar Paseo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BANNER HERO GALERÍA ================= -->
+  <section class="section"
+    style="background: linear-gradient(135deg, #F0F7FD 0%, #FFF8F3 100%); padding-bottom: 3.5rem;">
+    <div class="container" style="text-align: center; max-width: 52rem; margin: 0 auto;">
+      <span class="section-subtitle">Nuestra Manada en Acción</span>
+      <h1 class="hero-title" style="margin-top: 0.5rem;">Momentos llenos de alegría, juegos y libertad</h1>
+      <p class="section-description">
+        Una imagen vale más que mil palabras. Descubre cómo disfrutan los perritos del vecindario en sus salidas diarias
+        y recorridos de fin de semana.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN DE GALERÍA DE FOTOS ================= -->
+  <section class="section section-alt">
+    <div class="container">
+
+      <!-- Filtros de Galería -->
+      <div class="gallery-filter-nav">
+        <button class="filter-btn active" onclick="filterGallery('todos', this)">Todos los Recuerdos</button>
+        <button class="filter-btn" onclick="filterGallery('parque', this)">En el Parque</button>
+        <button class="filter-btn" onclick="filterGallery('cachorros', this)">Cachorros y Juego</button>
+        <button class="filter-btn" onclick="filterGallery('aventura', this)">Aventura y Senderos</button>
+      </div>
+
+      <!-- Rejilla de Fotografías -->
+      <div class="gallery-grid" id="gallery-container">
+
+        <div class="gallery-item" data-category="parque">
+          <img src="Style/imagenes/hero-dog-walking.jpg" alt="Paseo matinal grupal por sendero arbolado" width="400"
+            height="300">
+          <div class="gallery-overlay">
+            <h4>Max, Toby y Lola</h4>
+            <p>Paseo social matutino en el Parque Los Pinos</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="parque">
+          <img src="Style/imagenes/service-group-walk.jpg" alt="Manada canina caminando feliz sobre el césped"
+            width="400" height="300">
+          <div class="gallery-overlay">
+            <h4>Compañeros de Manada</h4>
+            <p>Socialización positiva y paso coordinado</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="cachorros">
+          <img src="Style/imagenes/service-individual-walk.jpg" alt="Cachorro de golden retriever recibiendo cariño"
+            width="400" height="300">
+          <div class="gallery-overlay">
+            <h4>Lucas (4 meses)</h4>
+            <p>Sus primeros paseos con correa y mucho cariño</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="aventura">
+          <img src="Style/imagenes/service-adventure-hike.jpg" alt="Perros senderistas en ruta boscosa" width="400"
+            height="300">
+          <div class="gallery-overlay">
+            <h4>Excursión al Cerro Verde</h4>
+            <p>Ruta de 3 horas con juegos de olfato y descanso</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="cachorros">
+          <img src="Style/imagenes/gallery-puppy-play.jpg" alt="Cachorro de bulldog corriendo tras pelota de tenis"
+            width="400" height="300">
+          <div class="gallery-overlay">
+            <h4>Rocky en Plena Carrera</h4>
+            <p>Sesión de juego libre en recinto cerrado</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="aventura">
+          <img src="Style/imagenes/gallery-lake-walk.jpg" alt="Perro refrescándose en la orilla del lago" width="400"
+            height="300">
+          <div class="gallery-overlay">
+            <h4>Simba en la Laguna</h4>
+            <p>Hidratación y chapuzón seguro tras la caminata</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= REPRODUCTOR DE VIDEO HTML5 (Style/videos/) ================= -->
+      <div class="video-showcase-card">
+        <div class="video-player-wrapper">
+          <video controls autoplay loop muted playsinline preload="metadata">
+            <source src="Style/videos/pug.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video HTML5.
+          </video>
+        </div>
+        <div class="video-info-panel">
+          <span class="service-badge-pill">Video Demostrativo</span>
+          <h3>Un Día Típico en Paseos Felices</h3>
+          <p>
+            Mira cómo organizamos la dinámica de los paseos: recogida puntual en casa, camino seguro con arneses dobles,
+            tiempo libre de olfato y regreso con patas limpias.
+          </p>
+          <ul class="checklist">
+            <li><strong>08:30:</strong> Bienvenida cariñosa en tu puerta.</li>
+            <li><strong>09:00:</strong> Ejercicio, juegos con pelotas y socialización.</li>
+            <li><strong>10:00:</strong> Agua fresca, descanso a la sombra y fotos.</li>
+            <li><strong>10:30:</strong> Entrega feliz en casa listo para una siesta.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= TESTIMONIOS VECINALES ================= -->
+      <div class="section-header" style="margin-top: 5rem; margin-bottom: 2.5rem;">
+        <span class="section-subtitle">Lo que dicen los vecinos</span>
+        <h2>Historias de familias de la comunidad</h2>
+      </div>
+
+      <div class="services-grid" style="margin-bottom: 2rem;">
+        <div
+          style="background-color: var(--color-white); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+          <div style="color: #F59E0B; font-size: 1.1rem; margin-bottom: 0.75rem;">⭐⭐⭐⭐⭐</div>
+          <p style="font-style: italic; color: var(--color-text); font-size: 0.95rem;">
+            "Toby sufría de mucha ansiedad por quedarse solo. Desde que se unió a Paseos Felices llega relajado y feliz.
+            Las fotos que mandan a diario alegran mi jornada de trabajo."
+          </p>
+          <strong style="display: block; color: var(--color-dark); margin-top: 1rem;">— Camila Soto</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-light);">Mamá de Toby (Golden Retriever)</span>
+        </div>
+
+        <div
+          style="background-color: var(--color-white); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+          <div style="color: #F59E0B; font-size: 1.1rem; margin-bottom: 0.75rem;">⭐⭐⭐⭐⭐</div>
+          <p style="font-style: italic; color: var(--color-text); font-size: 0.95rem;">
+            "Es un alivio contar con personas tan profesionales y cariñosas en el mismo barrio. Se nota su amor genuino
+            por los perros y la seguridad con la que los manejan."
+          </p>
+          <strong style="display: block; color: var(--color-dark); margin-top: 1rem;">— Jorge Valenzuela</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-light);">Papá de Luna y Milo (Mestizos)</span>
+        </div>
+
+        <div
+          style="background-color: var(--color-white); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+          <div style="color: #F59E0B; font-size: 1.1rem; margin-bottom: 0.75rem;">⭐⭐⭐⭐⭐</div>
+          <p style="font-style: italic; color: var(--color-text); font-size: 0.95rem;">
+            "Las salidas de senderismo del fin de semana son fantásticas. Mi perra regresa renovada y duerme como un
+            ángel. 100% recomendado este emprendimiento vecinal."
+          </p>
+          <strong style="display: block; color: var(--color-dark); margin-top: 1rem;">— Andrea Morales</strong>
+          <span style="font-size: 0.85rem; color: var(--color-text-light);">Tutora de Kiara (Border Collie)</span>
+        </div>
+      </div>
+
+      <!-- Banner CTA -->
+      <div class="cta-banner">
+        <h2>¿Quieres que tu perrito sea el próximo en nuestra galería?</h2>
+        <p>
+          Súmalo a nuestra comunidad de paseos seguros y compártele momentos únicos cada día.
+        </p>
+        <div class="cta-banner-buttons">
+          <a href="contacto.html" class="btn btn-white">Reservar Primer Paseo</a>
+          <a href="servicios.html" class="btn btn-outline" style="border-color: #ffffff; color: #ffffff;">Conocer
+            Servicios</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PIE DE PÁGINA (FOOTER) ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="Style/imagenes/logo.svg" alt="Logotipo Paseos Felices" width="180" height="42">
+          </a>
+          <p>
+            Emprendimiento comunitario dedicado a brindar paseos activos, seguros y llenos de cariño a los perros de
+            nuestra comunidad barrial.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">📸</a>
+            <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">📘</a>
+            <a href="https://wa.me/50230062694" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios Caninos</a></li>
+            <li><a href="precios.html">Planes y Precios</a></li>
+            <li><a href="galeria.html">Galería y Videos</a></li>
+            <li><a href="contacto.html">Contacto y Reservas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Modalidades</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html#social">Paseo Social Grupal</a></li>
+            <li><a href="servicios.html#individual">Paseo Individual VIP</a></li>
+            <li><a href="servicios.html#aventura">Senderismo de Aventura</a></li>
+            <li><a href="servicios.html#guarderia">Guardería Comunitaria</a></li>
+            <li><a href="precios.html">Promociones Vecinales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Comunidad</h4>
+          <ul class="footer-contact-info">
+            <li><span class="icon">📍</span> Zona 16</li>
+            <li><span class="icon">📞</span> +502 3006-2694</li>
+            <li><span class="icon">✉️</span> contacto@paseosfelices.com</li>
+            <li><span class="icon">⏰</span> Lunes a Sábado: 07:30 a 20:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Paseos Felices</strong>. Emprendimiento Comunitario. Todos los derechos reservados.</p>
+        <p>Momentos reales de perros felices en nuestra comunidad 🐾</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Filtrado interactivo de la galería
+    function filterGallery(category, button) {
+      const items = document.querySelectorAll('.gallery-item');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      items.forEach(item => {
+        if (category === 'todos' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Toggle menú móvil
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const toggle = document.getElementById('nav-toggle');
+        if (toggle) toggle.checked = false;
+      });
+    });
+  </script>
+</body>
+
+</html>

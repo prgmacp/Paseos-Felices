@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paseos Felices | Paseos Caninos Comunitarios y Cuidados con Amor</title>
+  <meta name="description"
+    content="Emprendimiento comunitario de paseos caninos. Brindamos paseos seguros, socialización y amor para tu mascota con monitoreo GPS y fotos en tiempo real.">
+  <link rel="icon" type="image/svg+xml" href="Style/imagenes/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+
+  <!-- ================= ENCABEZADO Y NAVEGACIÓN ================= -->
+  <header class="site-header" id="inicio">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de Paseos Felices">
+        <img src="Style/imagenes/logo.svg" alt="Logotipo Paseos Felices" width="180" height="42">
+      </a>
+
+      <!-- Interruptor Menú Móvil -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Abrir menú de navegación">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Enlaces de Navegación -->
+      <nav class="nav-menu" role="navigation" aria-label="Menú principal">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="precios.html" class="nav-link">Precios</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <div class="mobile-menu-cta" style="display: none;">
+          <a href="contacto.html" class="btn btn-secondary btn-sm btn-block">Reservar Paseo</a>
+        </div>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contacto.html" class="btn btn-secondary btn-sm">Reservar Paseo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= SECCIÓN PRINCIPAL (HERO) ================= -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>COMUNITARIO</span> Cuidado cercano, seguro y con vocación
+        </div>
+        <h1 class="hero-title">
+          Paseos seguros y llenos de <span class="highlight-orange">alegría</span> para tu <span class="highlight">mejor
+            amigo</span>
+        </h1>
+        <p class="hero-description">
+          Somos un emprendimiento de vecinos apasionados por el bienestar canino. Ofrecemos paseos diarios en manadas
+          reducidas, seguimiento en tiempo real y dinámicas de juego en los mejores parques de nuestra comunidad.
+        </p>
+        <div class="hero-actions">
+          <a href="servicios.html" class="btn btn-primary">Ver Nuestros Servicios</a>
+          <a href="#contacto" class="btn btn-outline">Agendar Paseo de Prueba</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">+180</span>
+            <span class="stat-label">Perritos Atendidos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Reporte con Fotos/GPS</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5 Años</span>
+            <span class="stat-label">Creando Grandes Aventuras</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-card">
+          <img src="Style/imagenes/hero-dog-walking.jpg" alt="Paseadora canina en un parque verde con perros felices"
+            width="600" height="375">
+        </div>
+        <div class="floating-badge">
+          <div class="floating-badge-icon">⭐</div>
+          <div class="floating-badge-text">
+            <strong>Calificación 4.9/5</strong>
+            <span>Más de 80 familias confían en nosotros</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCTOS O SERVICIOS (MÍNIMO 3) ================= -->
+  <section class="section section-alt" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Lo que ofrecemos</span>
+        <h2 class="section-title">Servicios diseñados para la felicidad de tu mascota</h2>
+        <p class="section-description">
+          Adaptamos cada paseo a la energía, edad y temperamento de tu perro para asegurar una experiencia estimulante y
+          segura.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Servicio 1 -->
+        <article class="service-card">
+          <div class="service-image-box">
+            <img src="Style/imagenes/service-group-walk.jpg" alt="Paseo social en grupo por el parque" width="400"
+              height="300">
+            <span class="service-tag tag-blue">Más Popular</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Paseo Social en Manada</h3>
+            <p class="service-description">
+              Grupos reducidos de máximo 4 perros compatibles por tamaño y energía. Fomenta la socialización positiva,
+              el juego grupal y reduce el estrés.
+            </p>
+            <ul class="service-features">
+              <li>Duración: 60 minutos activos</li>
+              <li>Socialización guiada y controlada</li>
+              <li>Hidratación constante y premios naturales</li>
+              <li>Reporte fotográfico al finalizar</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-currency">Desde</span>
+                <span class="price-amount">Q15.00</span>
+                <span class="price-unit">por paseo / sesión</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm" data-bs-toggle="modal"
+                data-bs-target="#modalServicioSocial">Detalles</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Servicio 2 -->
+        <article class="service-card">
+          <div class="service-image-box">
+            <img src="Style/imagenes/service-individual-walk.jpg" alt="Paseo canino individual y personalizado"
+              width="400" height="300">
+            <span class="service-tag tag-orange">Atención VIP</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Paseo Individual Personalizado</h3>
+            <p class="service-description">
+              Paseo exclusivo 1 a 1 pensado para cachorros en proceso de aprendizaje, perritos senior con movilidad
+              reducida o animales tímidos y reactivos.
+            </p>
+            <ul class="service-features">
+              <li>Duración: 45 o 60 minutos a elección</li>
+              <li>Paseador dedicado en exclusiva</li>
+              <li>Refuerzo de comandos básicos</li>
+              <li>Monitoreo de ritmo y salud en tiempo real</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-currency">Desde</span>
+                <span class="price-amount">Q25.00</span>
+                <span class="price-unit">por paseo exclusivo</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm" data-bs-toggle="modal"
+                data-bs-target="#modalServicioIndividual">Detalles</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Servicio 3 -->
+        <article class="service-card">
+          <div class="service-image-box">
+            <img src="Style/imagenes/service-adventure-hike.jpg" alt="Perritos en ruta de senderismo en la naturaleza"
+              width="400" height="300">
+            <span class="service-tag tag-blue">Fin de Semana</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Ruta Aventura & Senderismo</h3>
+            <p class="service-description">
+              Excursiones especiales por senderos naturales y colinas cercanas. Ideal para liberar energía acumulada en
+              perros activos y amantes de la naturaleza.
+            </p>
+            <ul class="service-features">
+              <li>Duración: 2.5 a 3 horas de ruta</li>
+              <li>Transporte seguro climatizado ida y vuelta</li>
+              <li>Arneses especiales y botiquín de primeros auxilios</li>
+              <li>Videos y fotos en alta resolución</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-currency">Desde</span>
+                <span class="price-amount">Q40.00</span>
+                <span class="price-unit">por excursión completa</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm" data-bs-toggle="modal"
+                data-bs-target="#modalServicioAventura">Detalles</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="precios.html" class="btn btn-primary">Comparar Todos los Planes y Precios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN INFORMATIVA SOBRE EL NEGOCIO ================= -->
+  <section class="section" id="nosotros">
+    <div class="container info-grid">
+      <div class="info-image-container">
+        <div class="info-image-card">
+          <img src="Style/imagenes/about-community-team.jpg"
+            alt="Equipo comunitario de paseadores con mascotas del vecindario" width="600" height="450">
+        </div>
+        <div class="info-badge-overlay">
+          <strong>100%</strong>
+          <span>Vecinos Comprometidos</span>
+        </div>
+      </div>
+
+      <div class="info-content">
+        <span class="section-subtitle">Nuestra Historia</span>
+        <h2 class="section-title">Un emprendimiento nacido del amor vecinal por los animales</h2>
+        <p class="info-lead">
+          En "Paseos Felices" no vemos a tu perro como un cliente más, sino como un integrante esencial de nuestra
+          comunidad barrial.
+        </p>
+        <p class="section-description">
+          Comenzamos en 2021 cuando nos dimos cuenta de que muchos vecinos con largas jornadas laborales no podían
+          brindar a sus mascotas el tiempo de ejercicio y estímulo necesario. Hoy contamos con un equipo certificado en
+          primeros auxilios caninos y manejo respetuoso, comprometidos con que cada salida sea el momento más esperado
+          del día para tu perrito.
+        </p>
+
+        <div class="info-values-list">
+          <div class="value-item">
+            <div class="value-icon">📍</div>
+            <div class="value-text">
+              <h4>Rastreo y Rutas Claras</h4>
+              <p>Sabes en todo momento qué parque visitamos y cuántos kilómetros caminamos.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">🩺</div>
+            <div class="value-text">
+              <h4>Seguridad y Botiquín</h4>
+              <p>Capacitación ante emergencias y convenio con veterinarias del vecindario.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">📸</div>
+            <div class="value-text">
+              <h4>Reporte Diario</h4>
+              <p>Recibe fotos y videos divertidos por WhatsApp al culminar cada recorrido.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">🤝</div>
+            <div class="value-text">
+              <h4>Apoyo Comunitario</h4>
+              <p>Tarifas accesibles y descuentos especiales para vecinos jubilados o multifamilias.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a href="galeria.html" class="btn btn-secondary">Conoce a Nuestra Manada</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN DE CONTACTO CON FORMULARIO ================= -->
+  <section class="section section-alt" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Hablemos hoy</span>
+        <h2 class="section-title">Contáctanos y agenda el primer paseo gratis</h2>
+        <p class="section-description">
+          Queremos conocer a tu perrito y sus necesidades. Envíanos un mensaje o comunícate directamente por nuestros
+          canales comunitarios.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Información de Contacto -->
+        <div class="contact-info-panel">
+          <div class="contact-info-header">
+            <h3>Información de Contacto</h3>
+            <p>Estamos disponibles de lunes a sábado en nuestra sede comunitaria y rutas zonales.</p>
+          </div>
+
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="method-icon">📱</div>
+              <div class="method-details">
+                <span>Teléfono / WhatsApp</span>
+                <a href="tel:+50230062694">+502 3006-2694</a>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">✉️</div>
+              <div class="method-details">
+                <span>Correo Electrónico</span>
+                <a href="mailto:contacto@paseosfelices.com">contacto@paseosfelices.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">🏡</div>
+              <div class="method-details">
+                <span>Zona de Cobertura</span>
+                <strong>Zona 16</strong>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">⏰</div>
+              <div class="method-details">
+                <span>Horario de Atención</span>
+                <strong>Lunes a Sábado: 07:30 - 20:00 hrs</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-highlight-box">
+            <h4>💡 ¿Primera vez con nosotros?</h4>
+            <p>Realizamos una visita previa gratuita a tu domicilio para conocer la personalidad de tu mascota antes de
+              iniciar los paseos.</p>
+          </div>
+        </div>
+
+        <!-- Formulario Básico Requerido -->
+        <div class="contact-form-panel">
+          <form action="#" method="POST"
+            onsubmit="event.preventDefault(); alert('¡Gracias por comunicarte con Paseos Felices! Te responderemos en menos de 2 horas.'); this.reset();">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre" class="form-label">Tu Nombre *</label>
+                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ej: Marcela González"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="telefono" class="form-label">Teléfono de Contacto *</label>
+                <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="Ej: +502 3006-2694"
+                  required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="correo" class="form-label">Correo Electrónico *</label>
+                <input type="email" id="correo" name="correo" class="form-input" placeholder="tu-correo@ejemplo.com"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="nombre-perro" class="form-label">Nombre de tu Perrito *</label>
+                <input type="text" id="nombre-perro" name="nombre_perro" class="form-input"
+                  placeholder="Ej: Toby / Luna" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio" class="form-label">Servicio de Interés</label>
+              <select id="servicio" name="servicio" class="form-select">
+                <option value="social">Paseo Social en Manada (1 hr)</option>
+                <option value="individual">Paseo Individual VIP (1 hr)</option>
+                <option value="aventura">Ruta Aventura Senderismo (Fin de semana)</option>
+                <option value="otro">Consulta general / Personalizado</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje" class="form-label">Mensaje o Cuidados Especiales</label>
+              <textarea id="mensaje" name="mensaje" class="form-textarea"
+                placeholder="Cuéntanos sobre los horarios preferidos, edad, temperamento o requerimientos de tu perrito..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary btn-block">Enviar Solicitud de Paseo</button>
+            <p class="form-note">🔒 Respetamos tu privacidad. Tus datos sólo se utilizarán para coordinar el servicio.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PIE DE PÁGINA (FOOTER) ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna 1: Marca y bio -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="Style/imagenes/logo.svg" alt="Logotipo Paseos Felices" width="180" height="42">
+          </a>
+          <p>
+            Emprendimiento comunitario dedicado a brindar paseos activos, seguros y llenos de cariño a los perros de
+            nuestra comunidad barrial.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">📸</a>
+            <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">📘</a>
+            <a href="https://wa.me/50230062694" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios Caninos</a></li>
+            <li><a href="precios.html">Planes y Precios</a></li>
+            <li><a href="galeria.html">Galería y Videos</a></li>
+            <li><a href="contacto.html">Contacto y Reservas</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios -->
+        <div class="footer-col">
+          <h4>Modalidades</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html#social">Paseo Social Grupal</a></li>
+            <li><a href="servicios.html#individual">Paseo Individual VIP</a></li>
+            <li><a href="servicios.html#aventura">Senderismo de Aventura</a></li>
+            <li><a href="servicios.html#guarderia">Guardería Comunitaria</a></li>
+            <li><a href="precios.html">Promociones Vecinales</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Información de la Comunidad -->
+        <div class="footer-col">
+          <h4>Comunidad</h4>
+          <ul class="footer-contact-info">
+            <li><span class="icon">📍</span> Zona 16</li>
+            <li><span class="icon">📞</span> +502 3006-2694</li>
+            <li><span class="icon">✉️</span> contacto@paseosfelices.com</li>
+            <li><span class="icon">⏰</span> Lunes a Sábado: 07:30 a 20:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pie inferior -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Paseos Felices</strong>. Emprendimiento Comunitario. Todos los derechos reservados.</p>
+        <p>Hecho con amor y dedicación para nuestras mascotas del vecindario 🐾</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALES DE DETALLES DE SERVICIOS (POP-UPS) ================= -->
+  <!-- Modal 1: Paseo Social en Manada -->
+  <div class="modal fade" id="modalServicioSocial" tabindex="-1" aria-labelledby="modalServicioSocialLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content"
+        style="border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); overflow: hidden;">
+        <div class="modal-header"
+          style="border-bottom: 1px solid var(--color-border); background-color: var(--color-bg); padding: 1.25rem 1.5rem;">
+          <h4 class="modal-title" id="modalServicioSocialLabel"
+            style="font-family: var(--font-heading); font-weight: 700; color: var(--color-dark); margin: 0;">
+            Paseo Social en Manada
+          </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" style="padding: 1.75rem;">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-5">
+              <div
+                style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-sm);">
+                <img src="Style/imagenes/service-group-walk.jpg" alt="Paseo social en grupo por el parque"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <span class="service-badge-pill">Modalidad Comunitaria</span>
+              <p style="color: var(--color-text-light); line-height: 1.6; margin-bottom: 1rem;">
+                El ejercicio en grupo ofrece beneficios psicológicos inigualables. Ayuda a perros con energía
+                desbordante a canalizar tensiones mientras aprenden pautas de convivencia armónica junto a sus
+                congéneres.
+              </p>
+              <ul class="checklist" style="margin-bottom: 1.25rem; padding-left: 0;">
+                <li><strong style="color: var(--color-dark);">🐾 Grupos Pequeños:</strong> Máximo 4 perritos
+                  seleccionados por temperamento y tamaño.</li>
+                <li><strong style="color: var(--color-dark);">🌿 Ruta Verde:</strong> Recorrido por parques arborizados
+                  y zonas de césped limpio.</li>
+                <li><strong style="color: var(--color-dark);">👃 Estimulación Olfativa:</strong> Dinámicas guiadas de
+                  rastreo para relajar su mente.</li>
+                <li><strong style="color: var(--color-dark);">🛡️ Seguridad Total:</strong> Paseadores con doble correa
+                  de seguridad y agua fresca.</li>
+              </ul>
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary-dark);">
+                  Q15.00 <small style="font-size: 0.85rem; color: var(--color-text-light); font-weight: normal;">/
+                    paseo</small>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"
+          style="border-top: 1px solid var(--color-border); background-color: var(--color-bg); padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <button type="button" class="btn btn-outline btn-sm" data-bs-dismiss="modal">Cerrar</button>
+          <a href="contacto.html?servicio=social" class="btn btn-primary btn-sm">Solicitar Este Servicio 🐾</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Paseo Individual VIP -->
+  <div class="modal fade" id="modalServicioIndividual" tabindex="-1" aria-labelledby="modalServicioIndividualLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content"
+        style="border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); overflow: hidden;">
+        <div class="modal-header"
+          style="border-bottom: 1px solid var(--color-border); background-color: var(--color-bg); padding: 1.25rem 1.5rem;">
+          <h4 class="modal-title" id="modalServicioIndividualLabel"
+            style="font-family: var(--font-heading); font-weight: 700; color: var(--color-dark); margin: 0;">
+            Paseo Individual Personalizado (VIP)
+          </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" style="padding: 1.75rem;">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-5">
+              <div
+                style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-sm);">
+                <img src="Style/imagenes/service-individual-walk.jpg" alt="Paseo canino individual y personalizado"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <span class="service-badge-pill"
+                style="color: var(--color-secondary); background-color: var(--color-secondary-light);">100%
+                Personalizado</span>
+              <p style="color: var(--color-text-light); line-height: 1.6; margin-bottom: 1rem;">
+                Pensado con sumo cuidado para mascotas que requieren un trato exclusivo: cachorros que aún aprenden a
+                pasear con correa, perros mayores con artrosis o perritos con miedos urbanos que necesitan tranquilidad.
+              </p>
+              <ul class="checklist" style="margin-bottom: 1.25rem; padding-left: 0;">
+                <li><strong style="color: var(--color-dark);">⭐ Atención Exclusiva:</strong> Un paseador dedicado 100% a
+                  tu perrito durante toda la sesión.</li>
+                <li><strong style="color: var(--color-dark);">⏱️ Ritmo Personalizado:</strong> Paradas frecuentes de
+                  descanso, caricias y cero presiones.</li>
+                <li><strong style="color: var(--color-dark);">❤️ Refuerzo Positivo:</strong> Premios y palabras de
+                  aliento para superar temores a ruidos o autos.</li>
+                <li><strong style="color: var(--color-dark);">🩺 Monitoreo de Salud:</strong> Control de jadeo,
+                  hidratación y bienestar físico continuo.</li>
+              </ul>
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-secondary-dark);">
+                  Q25.00 <small style="font-size: 0.85rem; color: var(--color-text-light); font-weight: normal;">/
+                    paseo</small>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"
+          style="border-top: 1px solid var(--color-border); background-color: var(--color-bg); padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <button type="button" class="btn btn-outline btn-sm" data-bs-dismiss="modal">Cerrar</button>
+          <a href="contacto.html?servicio=individual" class="btn btn-secondary btn-sm">Solicitar Este Servicio 🐾</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Ruta Aventura & Senderismo -->
+  <div class="modal fade" id="modalServicioAventura" tabindex="-1" aria-labelledby="modalServicioAventuraLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content"
+        style="border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); overflow: hidden;">
+        <div class="modal-header"
+          style="border-bottom: 1px solid var(--color-border); background-color: var(--color-bg); padding: 1.25rem 1.5rem;">
+          <h4 class="modal-title" id="modalServicioAventuraLabel"
+            style="font-family: var(--font-heading); font-weight: 700; color: var(--color-dark); margin: 0;">
+            Ruta de Aventura & Senderismo
+          </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" style="padding: 1.75rem;">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-5">
+              <div
+                style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-sm);">
+                <img src="Style/imagenes/service-adventure-hike.jpg"
+                  alt="Perritos en ruta de senderismo en la naturaleza"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <span class="service-badge-pill">Excursión Natural</span>
+              <p style="color: var(--color-text-light); line-height: 1.6; margin-bottom: 1rem;">
+                Salidas especiales durante los sábados y domingos a senderos ecológicos, colinas y áreas protegidas
+                cercanas a la ciudad. Tu perro experimentará nuevos olores, texturas y ejercicio en plena naturaleza.
+              </p>
+              <ul class="checklist" style="margin-bottom: 1.25rem; padding-left: 0;">
+                <li><strong style="color: var(--color-dark);">🚐 Transporte Seguro:</strong> Vehículo adaptado con
+                  cinturones de seguridad caninos y aire acondicionado.</li>
+                <li><strong style="color: var(--color-dark);">⛰️ Duración Extendida:</strong> 3 horas entre caminata
+                  suave, juego libre en recintos cercados y descanso.</li>
+                <li><strong style="color: var(--color-dark);">🎒 Equipo Completo:</strong> Arneses ergonómicos,
+                  repelente natural contra insectos y botiquín de campo.</li>
+                <li><strong style="color: var(--color-dark);">📸 Reporte Audiovisual:</strong> Fotos y videos
+                  panorámicos de alta definición para tu recuerdo.</li>
+              </ul>
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary-dark);">
+                  Q40.00 <small style="font-size: 0.85rem; color: var(--color-text-light); font-weight: normal;">/
+                    excursión</small>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"
+          style="border-top: 1px solid var(--color-border); background-color: var(--color-bg); padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <button type="button" class="btn btn-outline btn-sm" data-bs-dismiss="modal">Cerrar</button>
+          <a href="contacto.html?servicio=aventura" class="btn btn-primary btn-sm">Solicitar Este Servicio 🐾</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Script para cerrar menú en móvil al hacer click en un enlace -->
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const toggle = document.getElementById('nav-toggle');
+        if (toggle) toggle.checked = false;
+      });
+    });
+  </script>
+</body>
+
+</html>

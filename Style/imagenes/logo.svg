@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none" role="img" aria-label="Logo Paseos Felices">
+  <!-- Emblema: Huellita / Mascota con corazón estilizado -->
+  <g transform="translate(6, 6)">
+    <!-- Círculo de fondo suave -->
+    <rect width="52" height="52" rx="16" fill="#3A9DE4" fill-opacity="0.12"/>
+    <circle cx="26" cy="26" r="22" stroke="#3A9DE4" stroke-width="2" stroke-dasharray="3 3"/>
+    
+    <!-- Almohadilla principal de la huella -->
+    <path d="M26 40C20.5 40 16 35.5 16 30.8C16 27.2 19 24.8 22.5 25C24 25.1 25.2 25.8 26 26.5C26.8 25.8 28 25.1 29.5 25C33 24.8 36 27.2 36 30.8C36 35.5 31.5 40 26 40Z" fill="#E4813A"/>
+    
+    <!-- Dedos de la huella -->
+    <circle cx="16" cy="21" r="3.5" fill="#3A9DE4"/>
+    <circle cx="22.5" cy="16.5" r="3.8" fill="#3A9DE4"/>
+    <circle cx="29.5" cy="16.5" r="3.8" fill="#3A9DE4"/>
+    <circle cx="36" cy="21" r="3.5" fill="#3A9DE4"/>
+  </g>
+
+  <!-- Tipografía del Negocio -->
+  <text x="68" y="31" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="22" fill="#1E293B" letter-spacing="-0.5">Paseos<tspan fill="#3A9DE4">Felices</tspan></text>
+  <text x="69" y="47" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10.5" fill="#E4813A" letter-spacing="1.2">PASEOS CANINOS COMUNITARIOS</text>
+</svg>

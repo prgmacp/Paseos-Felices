@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Reservas | Paseos Felices</title>
+  <meta name="description" content="Contáctanos para agendar paseos caninos o solicitar una visita de evaluación sin costo. Estamos en el corazón de tu comunidad.">
+  <link rel="icon" type="image/svg+xml" href="Style/imagenes/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+
+  <!-- ================= ENCABEZADO Y NAVEGACIÓN ================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de Paseos Felices">
+        <img src="Style/imagenes/logo.svg" alt="Logotipo Paseos Felices" width="180" height="42">
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Abrir menú de navegación">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu" role="navigation" aria-label="Menú principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="precios.html" class="nav-link">Precios</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="contacto.html" class="nav-link active">Contacto</a>
+        <div class="mobile-menu-cta" style="display: none;">
+          <a href="contacto.html" class="btn btn-secondary btn-sm btn-block">Reservar Paseo</a>
+        </div>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contacto.html" class="btn btn-secondary btn-sm">Reservar Paseo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BANNER HERO CONTACTO ================= -->
+  <section class="section" style="background: linear-gradient(135deg, #F0F7FD 0%, #FFF8F3 100%); padding-bottom: 3.5rem;">
+    <div class="container" style="text-align: center; max-width: 52rem; margin: 0 auto;">
+      <span class="section-subtitle">Estamos Cerca de Ti</span>
+      <h1 class="hero-title" style="margin-top: 0.5rem;">Contáctanos y agenda la visita inicial sin costo</h1>
+      <p class="section-description">
+        Nos encantaría conocer a tu mejor amigo. Cuéntanos sus hábitos, horarios y necesidades, o envíanos un mensaje directo por WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FORMULARIO COMPLETO Y MÉTODOS DE CONTACTO ================= -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Panel Izquierdo: Métodos de Contacto -->
+        <div class="contact-info-panel">
+          <div>
+            <span class="service-badge-pill">Atención Personalizada</span>
+            <h3 style="margin-top: 0.5rem;">Canales de Comunicación</h3>
+            <p style="color: var(--color-text-light); margin-bottom: 2rem;">
+              Respondemos con rapidez a través de WhatsApp o llamada telefónica. ¡Estamos siempre atentos a nuestros vecinos!
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon">💬</div>
+                <div class="method-details">
+                  <span>WhatsApp Directo</span>
+                  <a href="https://wa.me/50230062694" target="_blank" rel="noopener noreferrer">+502 3006-2694</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">📞</div>
+                <div class="method-details">
+                  <span>Llamadas Telefónicas</span>
+                  <a href="tel:+50230062694">+502 3006-2694</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">✉️</div>
+                <div class="method-details">
+                  <span>Correo Comunitario</span>
+                  <a href="mailto:contacto@paseosfelices.com">contacto@paseosfelices.com</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">📍</div>
+                <div class="method-details">
+                  <span>Punto de Encuentro y Rutas</span>
+                  <strong>Zona 16</strong>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">⏰</div>
+                <div class="method-details">
+                  <span>Jornadas de Paseos</span>
+                  <strong>Mañana: 07:30 - 11:30 | Tarde: 16:00 - 19:30</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-highlight-box" style="margin-top: 1.5rem;">
+            <h4>🐾 Protocolo de Primera Cita</h4>
+            <p>
+              Antes del primer paseo, realizamos un encuentro de 15 minutos en tu hogar o plaza más cercana para que tu perro se familiarice con el paseador asignado.
+            </p>
+          </div>
+        </div>
+
+        <!-- Panel Derecho: Formulario Completo -->
+        <div class="contact-form-panel">
+          <div class="form-header">
+            <span class="service-badge-pill" style="margin-bottom: 0.5rem; display: inline-block;">Atención Inmediata</span>
+            <h3>Solicitud de Paseos y Contacto Comunitario</h3>
+            <p>
+              Completa los datos de tu peludo y tus preferencias para agendar una visita de evaluación sin costo o coordinar paseos regulares en tu zona.
+            </p>
+          </div>
+
+          <div id="form-alert-success" class="form-alert form-alert-success" role="alert">
+            🐾 <strong>¡Solicitud enviada con éxito!</strong> Nos pondremos en contacto contigo mediante tu preferencia indicada en las próximas 2 horas para coordinar la visita inicial.
+          </div>
+
+          <div id="form-alert-error" class="form-alert form-alert-error" role="alert">
+            ⚠️ <strong>Por favor completa todos los campos requeridos</strong> marcados con asterisco (*) antes de enviar.
+          </div>
+
+          <form id="formulario-contacto" action="#" method="POST" novalidate>
+            
+            <!-- SECCIÓN 1: DATOS DEL TUTOR -->
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">👤 1. Datos del Tutor / Propietario</legend>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-nombre" class="form-label">Nombre Completo <span class="required-mark">*</span></label>
+                  <input type="text" id="contact-nombre" name="nombre_completo" class="form-input" placeholder="Ej: Patricia Morales" required minlength="3">
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Correo Electrónico <span class="required-mark">*</span></label>
+                  <input type="email" id="contact-email" name="correo_electronico" class="form-input" placeholder="patricia@ejemplo.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-telefono" class="form-label">Número de Teléfono / Celular <span class="required-mark">*</span></label>
+                  <input type="tel" id="contact-telefono" name="numero_telefono" class="form-input" placeholder="Ej: +502 3006-2694" required pattern="[0-9+\(\)\- ]{8,}" title="Ingresa un número válido de al menos 8 dígitos (solo números, +, espacios, guiones o paréntesis)">
+                </div>
+                <div class="form-group">
+                  <span class="form-label">Preferencia de Contacto <span class="required-mark">*</span></span>
+                  <div class="radio-options-grid">
+                    <label class="radio-card-label" for="pref-whatsapp">
+                      <input type="radio" id="pref-whatsapp" name="preferencia_contacto" value="whatsapp" checked>
+                      <span>💬 WhatsApp</span>
+                    </label>
+                    <label class="radio-card-label" for="pref-llamada">
+                      <input type="radio" id="pref-llamada" name="preferencia_contacto" value="llamada">
+                      <span>📞 Llamada</span>
+                    </label>
+                    <label class="radio-card-label" for="pref-correo">
+                      <input type="radio" id="pref-correo" name="preferencia_contacto" value="correo">
+                      <span>✉️ Correo</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- SECCIÓN 2: SOLICITUD Y DETALLES DE LA MASCOTA -->
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">🐕 2. Solicitud y Datos de la Mascota</legend>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-solicitud" class="form-label">Tipo de Solicitud <span class="required-mark">*</span></label>
+                  <select id="contact-solicitud" name="tipo_solicitud" class="form-select" required>
+                    <option value="" disabled selected>Selecciona una opción...</option>
+                    <option value="reserva-paseo">Reserva de Paseos Regulares</option>
+                    <option value="evaluacion-gratuita">Solicitud de Visita de Evaluación Gratuita</option>
+                    <option value="paseo-individual">Paseo Individual VIP</option>
+                    <option value="guarderia-dia">Guardería de Día</option>
+                    <option value="senderismo-aventura">Ruta de Senderismo & Aventura</option>
+                    <option value="consulta-general">Consulta General / Información</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-asunto" class="form-label">Asunto de la Solicitud <span class="required-mark">*</span></label>
+                  <input type="text" id="contact-asunto" name="asunto" class="form-input" placeholder="Ej: Reserva de paseos vespertinos para Rocky" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-perro" class="form-label">Nombre del Perro / Mascota <span class="required-mark">*</span></label>
+                  <input type="text" id="contact-perro" name="nombre_perro" class="form-input" placeholder="Ej: Rocky" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-raza" class="form-label">Tamaño / Contextura <span class="required-mark">*</span></label>
+                  <select id="contact-raza" name="raza_tamano" class="form-select" required>
+                    <option value="" disabled selected>Selecciona el tamaño...</option>
+                    <option value="pequeno">Pequeño (menos de 10 kg)</option>
+                    <option value="mediano">Mediano (10 a 25 kg)</option>
+                    <option value="grande">Grande (25 a 40 kg)</option>
+                    <option value="gigante">Gigante (+40 kg)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Campos adicionales específicos del negocio canino -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-fecha" class="form-label">Fecha Deseada de Inicio o Visita <span class="required-mark">*</span></label>
+                  <input type="date" id="contact-fecha" name="fecha_servicio" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-cantidad" class="form-label">Cantidad de Perros a Pasear <span class="required-mark">*</span></label>
+                  <input type="number" id="contact-cantidad" name="cantidad_mascotas" class="form-input" min="1" max="5" value="1" required>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- SECCIÓN 3: MENSAJE Y CONFORMIDAD -->
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">📝 3. Mensaje y Términos</legend>
+
+              <div class="form-group">
+                <label for="contact-mensaje" class="form-label">Mensaje o Comentarios Especiales <span class="required-mark">*</span></label>
+                <textarea id="contact-mensaje" name="mensaje_comentario" class="form-textarea" placeholder="Cuéntanos los hábitos de tu perro, si requiere medicación, cómo reacciona con otros caninos, rutinas de paseo o cualquier detalle importante..." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-card" for="contact-terminos">
+                  <input type="checkbox" id="contact-terminos" name="terminos_aceptados" required>
+                  <span class="checkbox-text">
+                    Acepto los <a href="#" onclick="event.preventDefault(); alert('Términos de Paseos Felices:\n- Paseos seguros con arnés y correa resistente.\n- Protocolos de hidratación constante.\n- Notificaciones y reporte al finalizar el recorrido.\n- Tratamiento ético y cariñoso.');">términos y condiciones</a> del servicio y la política de cuidado y bienestar canino de Paseos Felices. <span class="required-mark">*</span>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- ACCIONES DEL FORMULARIO -->
+            <div class="form-actions-row">
+              <button type="reset" class="btn btn-form-reset" id="btn-limpiar">
+                <span>🔄</span> Limpiar Formulario
+              </button>
+              <button type="submit" class="btn btn-form-submit" id="btn-enviar">
+                <span>🐾</span> Enviar Solicitud de Paseo
+              </button>
+            </div>
+
+            <p class="form-note">
+              <span>🔒</span> Tus datos están protegidos. No compartimos tu información con terceros ni enviamos publicidad no deseada.
+            </p>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- ================= MAPA Y ZONAS DE COBERTURA COMUNITARIA ================= -->
+      <div class="contact-map-card">
+        <div class="section-header" style="margin-bottom: 1.5rem; text-align: left;">
+          <span class="section-subtitle">Área de Cobertura</span>
+          <h2>Barrios y Parques que Recorremos a Diario</h2>
+          <p class="section-description" style="max-width: 100%;">
+            Operamos principalmente en la Zona 16 y alrededores residenciales para garantizar traslados a pie seguros y sin estrés vehicular para los perritos.
+          </p>
+        </div>
+
+        <div class="coverage-list">
+          <div class="coverage-item">
+            <h4>🌿 Sector Parque Central</h4>
+            <p>Calles aledañas, sendero botánico y áreas caninas autorizadas. Salidas de mañana y tarde.</p>
+          </div>
+          <div class="coverage-item">
+            <h4>🏡 Sector Los Pinos & Mirador</h4>
+            <p>Zonas residenciales tranquilas, plazas de recreo y bulevares con amplias aceras.</p>
+          </div>
+          <div class="coverage-item">
+            <h4>🌲 Sector Valle Verde</h4>
+            <p>Puntos verdes, áreas de juego y rutas perimetrales seguras para paseos en manada.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PIE DE PÁGINA (FOOTER) ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="Style/imagenes/logo.svg" alt="Logotipo Paseos Felices" width="180" height="42">
+          </a>
+          <p>
+            Emprendimiento comunitario dedicado a brindar paseos activos, seguros y llenos de cariño a los perros de nuestra comunidad barrial.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📸</a>
+            <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">📘</a>
+            <a href="https://wa.me/50230062694" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios Caninos</a></li>
+            <li><a href="precios.html">Planes y Precios</a></li>
+            <li><a href="galeria.html">Galería y Videos</a></li>
+            <li><a href="contacto.html">Contacto y Reservas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Modalidades</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html#social">Paseo Social Grupal</a></li>
+            <li><a href="servicios.html#individual">Paseo Individual VIP</a></li>
+            <li><a href="servicios.html#aventura">Senderismo de Aventura</a></li>
+            <li><a href="servicios.html#guarderia">Guardería Comunitaria</a></li>
+            <li><a href="precios.html">Promociones Vecinales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Comunidad</h4>
+          <ul class="footer-contact-info">
+            <li><span class="icon">📍</span> Zona 16</li>
+            <li><span class="icon">📞</span> +502 3006-2694</li>
+            <li><span class="icon">✉️</span> contacto@paseosfelices.com</li>
+            <li><span class="icon">⏰</span> Lunes a Sábado: 07:30 a 20:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Paseos Felices</strong>. Emprendimiento Comunitario. Todos los derechos reservados.</p>
+        <p>Siempre atentos y disponibles para los perritos de nuestro barrio 🐾</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Cerrar menú móvil al hacer clic en enlaces
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          const toggle = document.getElementById('nav-toggle');
+          if (toggle) toggle.checked = false;
+        });
+      });
+
+      // Configurar fecha mínima para hoy en el campo de fecha deseada
+      const inputFecha = document.getElementById('contact-fecha');
+      if (inputFecha) {
+        const today = new Date().toISOString().split('T')[0];
+        inputFecha.min = today;
+      }
+
+      // Auto-seleccionar solicitud o servicio si viene en URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const servicioParam = urlParams.get('servicio');
+      if (servicioParam) {
+        const selectSolicitud = document.getElementById('contact-solicitud');
+        if (selectSolicitud) {
+          // Mapeo amigable de parámetros comunes
+          const mapping = {
+            'social': 'reserva-paseo',
+            'individual': 'paseo-individual',
+            'aventura': 'senderismo-aventura',
+            'guarderia': 'guarderia-dia',
+            'evaluacion': 'evaluacion-gratuita'
+          };
+          selectSolicitud.value = mapping[servicioParam] || servicioParam;
+        }
+      }
+
+      // Manejador del Formulario: Validación y Experiencia de Usuario
+      const formulario = document.getElementById('formulario-contacto');
+      const alertSuccess = document.getElementById('form-alert-success');
+      const alertError = document.getElementById('form-alert-error');
+
+      if (formulario) {
+        formulario.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          // Comprobación de validez de todos los campos obligatorios
+          if (!formulario.checkValidity()) {
+            if (alertSuccess) alertSuccess.style.display = 'none';
+            if (alertError) {
+              alertError.style.display = 'block';
+              alertError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            formulario.reportValidity();
+            return;
+          }
+          // Reiniciar campos tras envío simulado exitoso (antes de mostrar el mensaje,
+          // porque el evento 'reset' oculta las alertas)
+
+          formulario.reset();
+
+          if (alertError) alertError.style.display = 'none';
+          if (alertSuccess) {
+            alertSuccess.style.display = 'block';
+            alertSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+
+          if (inputFecha) {
+            inputFecha.min = new Date().toISOString().split('T')[0];
+          }
+          const defaultRadio = document.getElementById('pref-whatsapp');
+          if (defaultRadio) defaultRadio.checked = true;
+        });
+
+        // Limpiar mensajes al presionar el botón de limpiar / restablecer
+        formulario.addEventListener('reset', () => {
+          if (alertSuccess) alertSuccess.style.display = 'none';
+          if (alertError) alertError.style.display = 'none';
+          const defaultRadio = document.getElementById('pref-whatsapp');
+          if (defaultRadio) setTimeout(() => defaultRadio.checked = true, 10);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
